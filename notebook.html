@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- BOOTSTRAP-JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+    <div class="d-flex align-items-stretch">
+        
+        <!-- Navigation Wrapper Block (bg-dark handles visual parameters) -->
+        <div class="nav-container bg-dark text-white py-4">
+            <!-- Logo placeholder block -->
+            <div class="text-center mb-5 px-3">
+                <div class="bg-secondary mx-auto rounded-circle d-flex align-items-center justify-content-center shadow" style="width: 65px; height: 65px;">
+                    <span class="fs-3">🎓</span>
+                </div>
+            </div>
+            
+            <!-- Contextual items navigation block menu lists -->
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#" class="active">Virtual Notebooks</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#" id="logoutBtn" class="mt-4">Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Main section layout container placeholder wrapper -->
+        <div class="yms">
+            
+            <!-- Virtual Notebook Header identifier node blocks -->
+            <div class="vn mb-4">
+                <h1 class="h4 notebook-badge mb-2">NOTEBOOKS</h1>
+                <p class="text-secondary small ms-1">Select a subject.</p>
+            </div>
+
+            <!-- Dashboard structural row card template arrangement -->
+            <div class="row g-4">
+                
+                <!-- Card Item Component Module: Filipino -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="vn-indiv d-flex flex-column h-100" data-subject="Filipino" data-teacher="Ms. Francisco">
+                        <h2 class="h4 fw-normal mb-3 text-dark">Filipino</h2>
+                        <div class="banner-placeholder text-muted small mb-3">📝 Banner Image</div>
+                        <p class="text-muted small mb-4">9-Amethyst 2025-2026</p>
+                        <p class="text-secondary small mb-2 mt-auto">Ms. Francisco</p>
+                        <div class="custom-progress"></div>
+                    </div>
+                </div>
+
+                <!-- Card Item Component Module: English -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="vn-indiv d-flex flex-column h-100" data-subject="English" data-teacher="Ms. Avila">
+                        <h2 class="h4 fw-normal mb-3 text-dark">English</h2>
+                        <div class="banner-placeholder text-muted small mb-3">📖 Banner Image</div>
+                        <p class="text-muted small mb-4">9-Amethyst 2025-2026</p>
+                        <p class="text-secondary small mb-2 mt-auto">Ms. Avila</p>
+                        <div class="custom-progress"></div>
+                    </div>
+                </div>
+
+                <!-- Card Item Component Module: Math -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="vn-indiv d-flex flex-column h-100" data-subject="Math" data-teacher="Mr. Verba">
+                        <h2 class="h4 fw-normal mb-3 text-dark">Math</h2>
+                        <div class="banner-placeholder text-muted small mb-3">📐 Banner Image</div>
+                        <p class="text-muted small mb-4">9-Amethyst 2025-2026</p>
+                        <p class="text-secondary small mb-2 mt-auto">Mr. Verba</p>
+                        <div class="custom-progress"></div>
+                    </div>
+                </div>
+
+                <!-- Card Item Component Module: Science -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="vn-indiv d-flex flex-column h-100" data-subject="Science" data-teacher="Ms. Mendaro">
+                        <h2 class="h4 fw-normal mb-3 text-dark">Science</h2>
+                        <div class="banner-placeholder text-muted small mb-3">🔬 Banner Image</div>
+                        <p class="text-muted small mb-4">9-Amethyst 2025-2026</p>
+                        <p class="text-secondary small mb-2 mt-auto">Ms. Mendaro</p>
+                        <div class="custom-progress"></div>
+                    </div>
+                </div>
+
+                <!-- Card Item Component Module: Social Studies -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="vn-indiv d-flex flex-column h-100" data-subject="Social Studies" data-teacher="Mr. Reynoso">
+                        <h2 class="h4 fw-normal mb-3 text-dark">Social Studies</h2>
+                        <div class="banner-placeholder text-muted small mb-3">🌍 Banner Image</div>
+                        <p class="text-muted small mb-4">9-Amethyst 2025-2026</p>
+                        <p class="text-secondary small mb-2 mt-auto">Mr. Reynoso</p>
+                        <div class="custom-progress"></div>
+                    </div>
+                </div>
+
+                <!-- Card Item Component Module: Values Education -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="vn-indiv d-flex flex-column h-100" data-subject="Values Education" data-teacher="Mr. Buntile">
+                        <h2 class="h4 fw-normal mb-3 text-dark">Values Education</h2>
+                        <div class="banner-placeholder text-muted small mb-3">💡 Banner Image</div>
+                        <p class="text-muted small mb-4">9-Amethyst 2025-2026</p>
+                        <p class="text-secondary small mb-2 mt-auto">Mr. Buntile</p>
+                        <div class="custom-progress"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Permanent fixed screen layout alignment footer info block -->
+    <div class="footer-fixed text-muted">
+        Adrianna Allas | 9 Sapphire #2026
+
+    
+    <script src="main.js"></script>
+</body>
+</html>

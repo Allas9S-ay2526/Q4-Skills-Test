@@ -24,16 +24,26 @@
             <label for="upername">Username</label>
             <input type="text" name="Username" id="upername" class="form-control">
            
-            <label for="pasword">Password</label>
+            <label for="pasword text-semi-bold">Password</label>
             <input type="text" name="pasword" id="pasword"class="form-control">
         </form>
 
         <button type="button" class="btn btn-primary mt-3" onclick="validateLogin()">Login</button>
         <button type="button" class="btn btn-success mt-3" onclick="resetForm()">Refresh</button>
-    </div>
-     <div class="mb-2">
+     <hr>
+      <div class="d-flex flex-column align-items-start ms-5 mb-4 text-start">
+                <div class="form-check form-switch p-0 m-0 d-flex align-items-center">
+                    <input class="form-check-input ms-0 me-2 mt-0" type="checkbox" id="stayLoggedIn" checked>
+                    <label class="text-secondary small fw-semibold" for="stayLoggedIn">Stay logged in</label>
+                </div>
+                <p class="small class="text-muted" style="font-size: 0.75; margin-left: 2.2;">Your session will stay active on this device</p>
+            </div>
+
+         <div class="mb-2">
                 <a href="#" class="text-decoration-none text-muted small" style="font-size: 0.8rem;">Forgot username / password?</a>
             </div>
+    </div>
+    
      <div class="position-absolute bottom-0 end-0 m-3 footer-text d-none d-sm-block">
         Adrianna Allas | 9 Sapphire #2026
     </div>
