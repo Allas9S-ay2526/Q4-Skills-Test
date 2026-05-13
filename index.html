@@ -4,40 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- BOOTSTRAP-JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
- <div class="d-flex align-text-stretch">
-    <div class="nav">
+ <div class="container bg-secondary PT-5 p-5 mt-5">
+        <h3>Account Login</h3>
+        <center>
+    <details ontoggle="alert('TEST CREDENTIALS: \nUser: Adr1! \nPass: 69822')">
+         <summary class="btn btn-sm btn-outline-secondary mb-3">View Login Help</summary>
+         <p class="small text-muted">Enter the credentials shown in the alert box.</p>
+    </details>
+        </center>
+        <form>
+            <label for="upername">Username</label>
+            <input type="text" name="Username" id="upername" class="form-control">
+           
+            <label for="pasword">Password</label>
+            <input type="text" name="pasword" id="pasword"class="form-control">
+        </form>
 
+        <button type="button" class="btn btn-primary mt-3" onclick="validateLogin()">Login</button>
+        <button type="button" class="btn btn-success mt-3" onclick="resetForm()">Refresh</button>
     </div>
-    <div class="yms">
-
-    </div>
-    <div class="vn-indiv">
-
-    </div>
- 
- //Navigation 
-    <div class="nav bg-dark text-white">
-        <!-- Logo [press ctrl +/] -->
-        <img src="" alt="">
-        <!-- menu - complete the list -->
-    </div>
-    <ul>
-        <li>Dashboard</li> <a href="#"></a>
-        <li>Virtual Notebooks</li> <a href="#"></a>
-    </ul>
-
-    <div class="vn">
-        <h1></h1>
-    </div>
-
-    <div class="row gap-3">
-        <div class="col-5">
-            <!-- insert code for card refer to bs5 -->
-        </div>
-    </div>
-</div>
-
+    <script src="main.js"></script>
 </body>
 </html>
